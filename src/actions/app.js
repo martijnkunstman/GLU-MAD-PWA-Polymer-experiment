@@ -27,7 +27,7 @@ export const navigate = (path) => (dispatch) => {
 };
 
 const loadPage = (page) => (dispatch) => {
-  switch(page) {
+  switch (page) {
     case 'view1':
       import('../components/my-view1.js').then((module) => {
         // Put code in here that you want to run every time when
@@ -39,6 +39,9 @@ const loadPage = (page) => (dispatch) => {
       break;
     case 'view3':
       import('../components/my-view3.js');
+      break;
+    case 'view4':
+      import('../components/my-view4.js');
       break;
     default:
       page = 'view404';
